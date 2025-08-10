@@ -22,5 +22,5 @@ def delete():
 def views():
     pass
 
-add("matin","09302242")
-print(contacts)
+#input
+user = input("please select an option :")
