@@ -5,3 +5,19 @@ print("="*15)
 
 #contacts-dict
 contacts = {}
+
+#add_contact
+def add():
+    pass
+
+#search_contact
+def search():
+    pass
+
+#delete_contact
+def delete():
+    pass
+
+#view
+def views():
+    pass
