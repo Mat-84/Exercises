@@ -7,8 +7,8 @@ print("="*15)
 contacts = {}
 
 #add_contact
-def add():
-    pass
+def add(contact,num):
+    contacts[contact] = num
 
 #search_contact
 def search():
@@ -21,3 +21,6 @@ def delete():
 #view
 def views():
     pass
+
+add("matin","09302242")
+print(contacts)
