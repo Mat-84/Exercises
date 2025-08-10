@@ -23,4 +23,9 @@ def views():
     pass
 
 #input
-user = input("please select an option :")
+user = input("\nplease select an option : ")
+if user == "1":
+    cont = input("please enter the name : ")
+    number = input("please enter the number : ")
+    add(contact=cont,num=number)
+    print(f"{cont} with number {number} has added to contacts")
