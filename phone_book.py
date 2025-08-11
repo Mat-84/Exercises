@@ -33,3 +33,7 @@ elif user == "2":
     search_input = input("\nplease enter the name that you want to find : ")
     res = search(name=search_input)
     print(f"\n{res}")
+elif user == "3":
+    pass
+elif user == "4":
+    pass
