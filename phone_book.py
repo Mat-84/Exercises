@@ -12,11 +12,7 @@ def add(contact,num):
 
 #search_contact
 def search(name):
-    contacts[name] = contacts.keys()
-    if name in contacts:
-        return name
-    else :
-        return "its not in the dictionary"
+    contacts.get(name,"its not find")
 
 #delete_contact
 def delete():
@@ -29,9 +25,11 @@ def views():
 #input
 user = input("\nplease select an option : ")
 if user == "1":
-    cont = input("please enter the name : ")
-    number = input("please enter the number : ")
+    cont = input("\nplease enter the name : ")
+    number = input("\nplease enter the number : ")
     add(contact=cont,num=number)
     print(f"{cont} with number {number} has added to contacts")
-
+elif user == "2":
+    search_input = input("\nplease enter the name that you want to find : ")
+    search(name=search_input)
 
