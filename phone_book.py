@@ -12,7 +12,7 @@ def add(contact,num):
 
 #search_contact
 def search(name):
-    return contacts.get(name,"Contact not find")
+    return contacts.get(name)
 
 #delete_contact
 def delete():
