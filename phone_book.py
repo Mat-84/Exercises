@@ -11,8 +11,12 @@ def add(contact,num):
     contacts[contact] = num
 
 #search_contact
-def search():
-    pass
+def search(name):
+    contacts[name] = contacts.keys()
+    if name in contacts:
+        return name
+    else :
+        return "its not in the dictionary"
 
 #delete_contact
 def delete():
@@ -29,3 +33,5 @@ if user == "1":
     number = input("please enter the number : ")
     add(contact=cont,num=number)
     print(f"{cont} with number {number} has added to contacts")
+
+
