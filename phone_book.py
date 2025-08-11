@@ -41,3 +41,5 @@ while True:
         pass
     elif user == "4":
         pass
+    else:
+        print("please enter a valid option")
