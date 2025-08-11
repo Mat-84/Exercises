@@ -12,7 +12,7 @@ def add(contact,num):
 
 #search_contact
 def search(name):
-    contacts.get(name,"its not find")
+    return contacts.get(name,"Contact not find")
 
 #delete_contact
 def delete():
@@ -31,5 +31,5 @@ if user == "1":
     print(f"{cont} with number {number} has added to contacts")
 elif user == "2":
     search_input = input("\nplease enter the name that you want to find : ")
-    search(name=search_input)
-
+    res = search(name=search_input)
+    print(f"\n{res}")
