@@ -28,11 +28,14 @@ if user == "1":
     cont = input("\nplease enter the name : ")
     number = input("\nplease enter the number : ")
     add(contact=cont,num=number)
-    print(f"{cont} with number {number} has added to contacts")
+    print(f"\n{cont} with number {number} has added to contacts")
 elif user == "2":
     search_input = input("\nplease enter the name that you want to find : ")
     res = search(name=search_input)
-    print(f"\n{res}")
+    if res :
+        print(f"\nnumber for {search_input} is {res}")
+    else:
+        print(f"\ncontact '{search_input}' not find")
 elif user == "3":
     pass
 elif user == "4":
