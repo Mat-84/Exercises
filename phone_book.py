@@ -26,8 +26,12 @@ def delete(cnt):
 
 #view
 def views():
-    for x,y in contacts.items():
-        print(f"\n{x}:{y}")
+    if contacts:
+        print("="*10,"All Contacts","="*10)
+        for name,number in contacts.items():
+            print(f"{name}:{number}")
+    else:
+        print("\nthere are no contacts")
 
 #input
 while True:
