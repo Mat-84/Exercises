@@ -16,14 +16,18 @@ def search(name):
 
 #delete_contact
 def delete(cnt):
-    contacts[cnt] = cnt
-    del cnt
+    if cnt in contacts :
+        del contacts[cnt]
+        print(f"{cnt} has deleted from contacts")
+    else :
+        print(f"{cnt} not found in contacts")
+    
     
 
 #view
 def views():
     for x,y in contacts.items():
-        print(x,y)
+        print(f"\n{x}:{y}")
 
 #input
 while True:
@@ -41,11 +45,12 @@ while True:
         else:
             print(f"\ncontact '{search_input}' not find")
     elif user == "3":
-        pass
+        name_to_delete = input("\nplease enter the name that you want to delete :")
+        delete(name_to_delete)
     elif user == "4":
         views()
     elif user == "5":
         print("\ngood bye ^-^")
         break
     else:
-        print("please enter a valid option")
+        print("\nplease enter a valid option")
