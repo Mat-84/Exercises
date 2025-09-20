@@ -22,7 +22,8 @@ def delete(cnt):
 
 #view
 def views():
-    pass
+    for x,y in contacts.items():
+        print(x,y)
 
 #input
 while True:
@@ -42,7 +43,7 @@ while True:
     elif user == "3":
         pass
     elif user == "4":
-        pass
+        views()
     elif user == "5":
         print("\ngood bye ^-^")
         break
