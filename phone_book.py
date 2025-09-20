@@ -15,8 +15,10 @@ def search(name):
     return contacts.get(name)
 
 #delete_contact
-def delete():
-    pass
+def delete(cnt):
+    contacts[cnt] = cnt
+    del cnt
+    
 
 #view
 def views():
